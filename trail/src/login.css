@@ -1,0 +1,71 @@
+/* Apply this CSS only to the login page */
+body.login-page {
+    background-image: url('back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+body:not(.login-page) {
+    background-image: none;
+}
+.login-container {
+    width: 400px;
+    padding: 20px;
+    background: rgba(162, 160, 160, 0.5); 
+    box-shadow: 0 0 20px white inset;
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5); 
+    transition: box-shadow 0.3s ease;
+}
+
+.login-container input[type="email"]:hover,
+.login-container input[type="password"]:hover {
+    box-shadow: 0 0 20px white;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(162, 160, 160, 0.5); 
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px white;
+}
+
+.login-container input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: black;
+}
